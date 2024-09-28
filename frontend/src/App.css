@@ -1,0 +1,282 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+
+}
+.app{
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 5px #0000;
+  display: flex;
+  width: 1280px;
+}
+
+
+.sidebar {
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background: #ececec;
+  padding: 5px 10px;
+  transition: all 0.4s ease;
+  width: 250px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.sidebar-links{
+  padding-left: 2px;
+}
+
+.sidebar-links h4 {
+  color: #000000;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 5px 0;
+  position: relative;
+}
+
+.sidebar-links .menu-separator {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  margin: 5px;
+  width: 100%;
+  height: 1px;
+  background: #484848;
+  transform-origin: right;
+}
+
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 10px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  color: #000000;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+.sidebar-links li a:hover {
+  color: #232323;
+  background: #fff;
+  border-radius: 4px;
+}
+
+Link{
+  text-decoration: none;
+}
+
+
+.product-card{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.25);
+  max-width: 270px;
+  max-height: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-header{
+	padding: 15px 30px;
+	text-align: left;
+}
+.card-header .ico{
+	max-height: 50px;
+  
+}
+.product-title{
+	font-size: 24px;
+	color: #353535;
+	margin: 5px 0;
+}
+
+.product-status{
+	color: #808080;
+}
+.product-price{
+	font-size: 30px;
+	color: #353535;
+	margin: 5px 0;
+}
+.card-footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn{
+	padding: 10px 40px;
+	border: none;
+	font-family: inherit;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.btn-primary{
+	background-color: transparent;
+  border: 2px solid #808080;
+	color: #808080;
+}
+.btn-primary:hover{
+  background-color: #b3b3b3;
+  color: #ffff;
+}
+
+.btn-secondary{
+	color: #808080;
+}
+.btn-secondary:hover{
+	background-color: #bcbcbc;
+	color: white;
+}
+
+
+.card-footer .btn:first-child{
+	margin-right: 15px;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+
+}
+.hh{
+  color: #ffff;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.fb{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.cont{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+.scrapbook-form {
+  max-width: 550px;
+  margin: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scrapbook-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 7px;
+  margin: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  resize: none;
+  box-sizing: border-box; 
+
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.fbx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgbx img{
+  height: 400px;
+  width: 400px;
+}
+
+.scrapbook-card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.scrapbook-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.scrapbook-creator {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.scrapbook-description {
+  font-size: 0.9em;
+  color: #666;
+}
